@@ -3,6 +3,8 @@ import { TodoForm } from './TodoForm'
 import { v4 as uuidv4 } from 'uuid';
 import { Todo } from './Todo';
 import { EditTodoForm } from './EditTodoForm';
+
+
 uuidv4();
 
 export const TodoWrapperLocalStorage = () => {
@@ -42,8 +44,7 @@ export const TodoWrapperLocalStorage = () => {
     }
   return (
     <div className='TodoWrapper'>
-        <h1>Get Things Done!</h1>
-        <TodoForm addTodo={addTodo} />
+        <h1>Todo App</h1>
         {todos.map((todo, index) => (
             todo.isEditing ? (
                 <EditTodoForm editTodo={editTask} task={todo} />
@@ -52,6 +53,10 @@ export const TodoWrapperLocalStorage = () => {
             )
             
         ))}
+        <figure>
+            <img src={todo} alt="todologo" />
+        </figure>
+
          
     </div>
   )
