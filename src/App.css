@@ -22,10 +22,6 @@ body {
   margin-top: 130px; /* Adjust the margin-top value for the image */
 }
 
-.app-image {
-  /* Add any image-specific styles here */
-}
-
 h1 {
   color: #fff;
   margin-bottom: 0.5rem;
@@ -100,14 +96,13 @@ h1 {
 }
 
 .TodoWrapper figure {
-  margin-bottom: 1rem; /* Adjust this margin as needed */
+  margin-bottom: 1rem; 
 }
 
 figure {
-  margin-top: 100px; /* Adjust the margin-top value to decrease the distance */
+  margin-top: 100px;  
 }
 
-/* Add other styles as needed */
 
 
  
